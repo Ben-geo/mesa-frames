@@ -18,7 +18,6 @@ class AbstractDataCollector(ABC):
         self._model = model 
         self._model_reporters = model_reporters or {}
         self._agent_reporters = agent_reporters or {}
-        #self._stats = stats or {} # confirm if we need this
         self._trigger = trigger or (lambda model: True)
         self._storage_uri = storage or "memory:"
         self._frames = [] 
